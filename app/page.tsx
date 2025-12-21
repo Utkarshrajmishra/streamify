@@ -1,10 +1,13 @@
 import Header from "@/components/landing/header";
-import Image from "next/image";
+import Hero from "@/components/landing/hero";
 
 export default function Home() {
   return (
-    <div className="h-screen bg-neutral-50">
-        <Header/>
+    <div className="bg-white">
+        <Header />
+        <main className="pt-16">
+            <Hero />
+        </main>
     </div>
   );
 }
