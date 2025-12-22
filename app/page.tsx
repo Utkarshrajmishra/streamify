@@ -3,6 +3,7 @@ import Header from "@/components/landing/header";
 import Hero from "@/components/landing/hero";
 import Message1 from "@/components/landing/message-1";
 import Process from "@/components/landing/process";
+import Purpose from "@/components/landing/purpose";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Features/>
         <Message1/>
         <Process/>
+        <Purpose/>
     </div>
   );
 }

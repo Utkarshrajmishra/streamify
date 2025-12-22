@@ -2,7 +2,7 @@ import Wrapper from "./wrapper";
 
 const Process = () => {
   return (
-    <section className="py-20 w-full flex justify-center font-sans">
+    <section className="py-26 w-full flex justify-center font-sans">
       <Wrapper>
         <div className="grid grid-cols-3 gap-12 items-center">
           
@@ -13,17 +13,17 @@ const Process = () => {
   </h2>
 
   <ul className="mt-auto space-y-4 text-lg text-neutral-600">
-    <li className="flex items-center gap-3">
-      <span className="text-black">01</span> Sign in
+    <li className="flex items-center gap-3 text-black">
+      <span className="bg-black h-2 w-2"></span> Sign in
     </li>
     <li className="flex items-center gap-3">
-      <span className="text-black">02</span> Select repo
+      <span className="text-black"></span> Select repo
     </li>
     <li className="flex items-center gap-3">
-      <span className="text-black">03</span> Future-fill or backfill
+      <span className="text-black"></span> Future-fill or backfill
     </li>
     <li className="flex items-center gap-3">
-      <span className="text-black">04</span> Watch it glow
+      <span className="text-black"></span> Watch it glow
     </li>
   </ul>
 </div>
