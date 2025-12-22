@@ -40,11 +40,39 @@ const Header = () => {
           </motion.div>
 
           {/* Navigation links */}
-          <motion.div className="flex gap-10 font-[500]" variants={itemVariants}>
-            {["Features", "Pricing", "Blog", "Changelog"].map((item) => (
-              <p key={item} className="cursor-pointer hover:text-blue-600">{item}</p>
-            ))}
-          </motion.div>
+<motion.div className="flex gap-10 font-[500]" variants={itemVariants}>
+  {["Features", "Pricing", "Blog", "Changelog"].map((item) => (
+    <motion.div
+      key={item}
+      className="relative cursor-pointer"
+      whileHover="hover"
+      initial="rest"
+      animate="rest"
+    >
+      <motion.p
+        variants={{
+          rest: { y: 0 },
+          hover: { y: -2 },
+        }}
+        transition={{ duration: 0.2, ease: "easeOut" }}
+        className="hover:text-neutral-900"
+      >
+        {item}
+      </motion.p>
+
+      {/* underline */}
+      <motion.span
+        variants={{
+          rest: { width: 0, opacity: 0 },
+          hover: { width: "100%", opacity: 1 },
+        }}
+        transition={{ duration: 0.25, ease: "easeOut" }}
+        className="absolute left-0 -bottom-1 h-[2px] bg-neutral-900"
+      />
+    </motion.div>
+  ))}
+</motion.div>
+
 
           {/* Button */}
           <motion.div variants={itemVariants}>

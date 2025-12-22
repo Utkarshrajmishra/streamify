@@ -9,14 +9,14 @@ const Features = () => {
         <div className="grid grid-cols-3 gap-6 w-full">
 
           {/* LEFT BIG CARD (spans 2 rows) */}
-          <div className="row-span-2 flex flex-col justify-between p-6 rounded-xl bg-neutral-50">
+          <div className="row-span-2 flex flex-col justify-between p-6 rounded-xl bg-neutral-100">
             <div className="flex items-center gap-3">
               <FaWallet className="text-2xl" />
               <p className="text-3xl font-medium">Free Forever</p>
             </div>
 
-            <div className="flex items-center text-7xl font-semibold">
-              <IndianRupee className="h-16 w-16" />
+            <div className="flex items-start text-7xl">
+              <IndianRupee className="size-8" />
               <p>0</p>
             </div>
 
