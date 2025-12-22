@@ -1,3 +1,4 @@
+import Features from "@/components/landing/features";
 import Header from "@/components/landing/header";
 import Hero from "@/components/landing/hero";
 
@@ -8,6 +9,7 @@ export default function Home() {
         <main className="pt-16">
             <Hero />
         </main>
+        <Features/>
     </div>
   );
 }
