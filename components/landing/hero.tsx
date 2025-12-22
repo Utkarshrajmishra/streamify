@@ -50,7 +50,7 @@ const Hero = () => {
 
           <motion.div className="flex gap-4" variants={itemVariants}>
             <Button className="relative overflow-hidden text-lg font-light p-5 rounded-full bg-neutral-800 text-white group">
-              Get Started
+             <img src="/logo-white.webp" alt="Backfill now" className="w-4 h-4 inline-block" /> Backfill now
               <span className="absolute top-0 left-[-75%] w-1/2 h-full bg-white opacity-30 transform -skew-x-12 transition-all duration-500 ease-in-out group-hover:left-[125%]"></span>
             </Button>
 

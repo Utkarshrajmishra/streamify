@@ -1,13 +1,14 @@
 import Features from "@/components/landing/features";
+import Features2 from "@/components/landing/features-2";
 import Header from "@/components/landing/header";
 import Hero from "@/components/landing/hero";
 import Message1 from "@/components/landing/message-1";
+import Message2 from "@/components/landing/message-2";
 import Process from "@/components/landing/process";
 import Purpose from "@/components/landing/purpose";
-
 export default function Home() {
   return (
-    <div className="bg-white">
+    <div className="bg-white  overflow-hidden">
         <Header />
         <main className="pt-16">
             <Hero />
@@ -16,6 +17,8 @@ export default function Home() {
         <Message1/>
         <Process/>
         <Purpose/>
+        <Features2/>
+        <Message2/>
     </div>
   );
 }
