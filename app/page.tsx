@@ -2,6 +2,7 @@ import Features from "@/components/landing/features";
 import Header from "@/components/landing/header";
 import Hero from "@/components/landing/hero";
 import Message1 from "@/components/landing/message-1";
+import Process from "@/components/landing/process";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         </main>
         <Features/>
         <Message1/>
+        <Process/>
     </div>
   );
 }
