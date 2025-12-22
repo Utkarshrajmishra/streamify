@@ -11,25 +11,20 @@ const TextAnimation = () => {
   useEffect(() => {
     const loop = async () => {
       while (true) {
-        // 1️⃣ Border line animation
         await borderControls.start({
           strokeDashoffset: 0,
           transition: { duration: 2, ease: "linear" },
         });
 
-        // 2️⃣ Black box goes UP
         await boxControls.start({
           y: -120,
           transition: { duration: 0.5, ease: "easeIn" },
         });
 
-        // 3️⃣ Swap content while hidden
-        setShowGithub((prev) => !prev);
+     setShowGithub((prev) => !prev);
 
-        // reset position below
-        boxControls.set({ y: 120 });
+       boxControls.set({ y: 120 });
 
-        // 4️⃣ Black box comes DOWN with bounce
         await boxControls.start({
           y: 0,
           transition: {
