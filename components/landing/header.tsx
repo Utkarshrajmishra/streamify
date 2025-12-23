@@ -5,7 +5,7 @@ import Wrapper from "./wrapper";
 import Image from "next/image";
 import { motion, Variants, easeInOut } from "framer-motion";
 import { PiGithubLogo } from "react-icons/pi";
-
+import { signIn } from "next-auth/react";
 const Header = () => {
   const containerVariants: Variants = {
     hidden: {},
@@ -77,7 +77,7 @@ const Header = () => {
 
 <motion.div variants={itemVariants}>
   <motion.div whileHover="hover" initial="rest" animate="rest">
-    <Button className="rounded-full cursor-pointer hover:bg-neutral-200 flex gap-2 items-center font-[500] text-md bg-neutral-100 text-black px-5 py-2">
+    <Button onClick={()=>signIn("github")} className="rounded-full cursor-pointer hover:bg-neutral-200 flex gap-2 items-center font-[500] text-md bg-neutral-100 text-black px-5 py-2">
       
       <motion.span
         variants={{
