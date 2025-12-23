@@ -4,6 +4,7 @@ import { Button } from "../ui/button";
 import Wrapper from "./wrapper";
 import Image from "next/image";
 import { motion, Variants, easeInOut } from "framer-motion";
+import { PiGithubLogo } from "react-icons/pi";
 
 const Header = () => {
   const containerVariants: Variants = {
@@ -74,12 +75,30 @@ const Header = () => {
 </motion.div>
 
 
-          {/* Button */}
-          <motion.div variants={itemVariants}>
-            <Button className="rounded-full font-[500] text-md bg-neutral-100 text-black px-5 py-2">
-              Get started
-            </Button>
-          </motion.div>
+<motion.div variants={itemVariants}>
+  <motion.div whileHover="hover" initial="rest" animate="rest">
+    <Button className="rounded-full cursor-pointer hover:bg-neutral-200 flex gap-2 items-center font-[500] text-md bg-neutral-100 text-black px-5 py-2">
+      
+      <motion.span
+        variants={{
+          rest: { rotate: 0 },
+          hover: {
+            rotate: [0, -10, 10, -10, 10, 0],
+          },
+        }}
+        transition={{
+          duration: 0.5,
+          ease: "easeInOut",
+        }}
+        className="inline-flex"
+      >
+        <PiGithubLogo />
+      </motion.span>
+
+      Sign-in
+    </Button>
+  </motion.div>
+</motion.div>
         </div>
       </Wrapper>
     </motion.header>

@@ -4,7 +4,7 @@ import { BiGitRepoForked } from "react-icons/bi";
 
 const Features2=()=>{
     return(
-        <section className="py-12 flex justify-center">
+        <section className="py-20 flex justify-center">
             <Wrapper>
                 <div className="border-b-1 border-neutral-200">
                 <div className="font-sans  mb-10">

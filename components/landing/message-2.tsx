@@ -16,11 +16,11 @@ const Message2 = () => {
       <Wrapper>
         <motion.p
           className="text-6xl"
-          initial={{ color: "#d4d4d4" }} // neutral-300
+          initial={{ color: "#d4d4d4" }}
           animate={isInView ? { color: "#171717" } : {}}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          Build by developer,
+          Build by developer, 
         </motion.p>
 
         <motion.p
@@ -30,7 +30,9 @@ const Message2 = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.25 }}
         >
           build for the developers.
+          
         </motion.p>
+        
       </Wrapper>
     </section>
   )
