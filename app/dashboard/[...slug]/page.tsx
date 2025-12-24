@@ -9,6 +9,7 @@ const DashboardPage=()=>{
         <div className="w-full">
             <Header/>
             <Home/>
+            
         </div>
         </section>
     )

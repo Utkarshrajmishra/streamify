@@ -2,6 +2,7 @@ import { IoReload } from "react-icons/io5"
 import { Button } from "../ui/button"
 import { Calendar, ChevronDown, Download } from "lucide-react"
 import SelectRepo from "./select-repo"
+import HeatMap from "./heatmap"
 
 const Home=()=>{
     return(
@@ -12,6 +13,7 @@ const Home=()=>{
             <Button className="rounded-sm bg-neutral-800"><IoReload/> Refresh</Button>
       </div>
 <SelectRepo/>
+<HeatMap/>
         </section>
     )
 }
