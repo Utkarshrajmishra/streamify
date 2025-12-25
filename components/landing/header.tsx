@@ -6,6 +6,7 @@ import Image from "next/image";
 import { motion, Variants, easeInOut } from "framer-motion";
 import { PiGithubLogo } from "react-icons/pi";
 import { signIn, useSession } from "next-auth/react";
+import { ProfilePopover } from "../auth/profile";
 const Header = () => {
 
   const session=useSession()
@@ -83,7 +84,12 @@ const Header = () => {
   ))}
 </motion.div>
 
-
+{
+  session?.status==='authenticated'?
+  <div>
+    <ProfilePopover/>
+  </div>
+  :
 <motion.div variants={itemVariants}>
   <motion.div whileHover="hover" initial="rest" animate="rest">
     <Button onClick={()=>signIn("github")} className="rounded-full cursor-pointer hover:bg-neutral-200 flex gap-2 items-center font-[500] text-md bg-neutral-100 text-black px-5 py-2">
@@ -108,6 +114,7 @@ const Header = () => {
     </Button>
   </motion.div>
 </motion.div>
+}
         </div>
       </Wrapper>
     </motion.header>
