@@ -7,6 +7,10 @@ import Message2 from "@/components/landing/message-2";
 import Process from "@/components/landing/process";
 import Purpose from "@/components/landing/purpose";
 export default function Home() {
+
+  
+
+  
   return (
     <div className="bg-white  overflow-hidden">
         <Header />

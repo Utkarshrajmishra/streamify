@@ -1,12 +1,21 @@
 "use client";
-
+import { useEffect } from "react";
 import { Button } from "../ui/button";
 import Wrapper from "./wrapper";
 import Image from "next/image";
 import { motion, Variants, easeInOut } from "framer-motion";
 import { PiGithubLogo } from "react-icons/pi";
-import { signIn } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 const Header = () => {
+
+  const session=useSession()
+
+  useEffect(()=>{
+    console.log(session.status)
+    console.log(session.data)
+  },[session])
+
+
   const containerVariants: Variants = {
     hidden: {},
     show: {
