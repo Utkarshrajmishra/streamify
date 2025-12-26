@@ -4,12 +4,10 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { signOut, useSession } from "next-auth/react"
 import { User, Mail, LogOut, LayoutDashboard } from "lucide-react"
 import { MdEmail } from "react-icons/md"
-import { GrDashboard } from "react-icons/gr"
 
 export function ProfilePopover() {
   const { data: session, status } = useSession()
 
-  // Don't render if not authenticated
   if (status !== 'authenticated' || !session?.user) {
     return null
   }
@@ -27,7 +25,7 @@ export function ProfilePopover() {
             <img 
               src={user.image} 
               alt={user.name || "User"} 
-              className="h-9 w-9 rounded-full border-2 border-neutral-800 object-cover"
+              className="h-9 w-9 cursor-pointer rounded-full border-2 border-neutral-800 object-cover"
             />
           ) : (
             <div className="h-10 w-10 rounded-full border-2 border-neutral-800 bg-neutral-700 flex items-center justify-center">
