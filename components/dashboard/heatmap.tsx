@@ -16,13 +16,16 @@ const value = [
 
 const Demo = () => {
   return (
-    <div>
+              <div className="h-[250px]  flex-col w-full border-1 border-neutral-400 rounded-md flex p-4  mt-4 bg-white">
+      
       <HeatMap
+       className='w-full h-full'
         value={value}
         weekLabels={['', 'Mon', '', 'Wed', '', 'Fri', '']}
         startDate={new Date('2016/01/01')}
       />
     </div>
+    
   )
 };
 
