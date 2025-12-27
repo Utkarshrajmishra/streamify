@@ -15,18 +15,14 @@ const Sidebar = () => {
                 <p className="p-2 hover:text-neutral-950">API</p>
                 <p className="p-2 hover:text-neutral-950">Github to Resume</p>
                 <p className="p-2 hover:text-neutral-950">Profile Generator</p>
-                                <p className="p-2 hover:text-neutral-950">Docs</p>
+                <p className="p-2 hover:text-neutral-950">Docs</p>
                 <p className="p-2 hover:text-neutral-950">API</p>
                 <p className="p-2 hover:text-neutral-950">Github to Resume</p>
                 <p className="p-2 hover:text-neutral-950">Profile Generator</p>
-
-
             </div>
             </div>
-             
             <div className="h-32 bg-neutral-100 border-t border-neutral-400 flex flex-col justify-center items-center p-4">
-                
-            </div>
+         </div>
         </section>
     )
 }
