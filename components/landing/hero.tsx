@@ -3,6 +3,7 @@ import Wrapper from "./wrapper";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { motion, Variants, Transition } from "framer-motion";
+import Heatmap from "./heatmap";
 
 const Hero = () => {
   const containerVariants: Variants = {
@@ -60,12 +61,21 @@ const Hero = () => {
             </Button>
           </motion.div>
 
-          <motion.div
-            className="h-[600px] w-full bg-gradient-to-b flex justify-center from-pink-300 via-blue-200 to-blue-200 rounded-xl mt-9"
-            variants={itemVariants}
-          >
-            {/* <Image src="/github.png" width={1000} height={400} alt="Hero Image"/> */}
-          </motion.div>
+<motion.div
+  className="h-[600px] w-full bg-gradient-to-b flex items-center justify-center from-pink-300 p-4 via-blue-200 to-blue-200 rounded-xl mt-9"
+  variants={itemVariants}
+>
+  <div className="w-full h-full rounded-lg overflow-hidden">
+    <iframe
+      className="w-full h-full"
+      src="https://www.youtube.com/embed/cZ5eTWoa01A?autoplay=1&mute=1&controls=0&loop=1&playlist=VIDEO_ID"
+      title="YouTube video"
+      allow="autoplay; encrypted-media"
+      allowFullScreen
+    />
+  </div>
+</motion.div>
+
         </motion.section>
       </Wrapper>
     </main>
