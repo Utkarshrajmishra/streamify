@@ -6,7 +6,7 @@ import HeatMap from "./heatmap"
 
 const Home=()=>{
     return(
-        <section className="p-6 font-sans">
+        <section className=" font-sans">
             <div className="flex gap-4 justify-end">
                         <Button className="rounded-sm bg-neutral-800"><Calendar/> Year 2025 <ChevronDown className="size-3"/></Button>
 

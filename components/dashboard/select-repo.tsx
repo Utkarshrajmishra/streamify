@@ -17,7 +17,7 @@ const SelectRepo=()=>{
      </div>
             <Input placeholder="Search repositories..." className="h-10 mt-4 w-[100%] bg-neutral-100"/>
         
-     <div className="mt-4 flex flex-col gap-1">
+     <div className="mt-8 flex flex-col gap-1">
         <p className="flex gap-1 items-center"> Select Branch</p>
         <div className="text-sm mt-1 flex gap-3">
             <p className="bg-neutral-900 w-fit h-fit py-1 px-2 rounded-sm text-white">main</p>
